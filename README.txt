@@ -18,11 +18,17 @@ entity with the 'Hover card' view mode.
 INSTALLATION
 ------------
 
-1. Install the module the drupal way [1]
+1. Download the Tipsy module [1]
 
-2. Customize the 'Hover card' view mode for user entites at manage display [2]
+2. Install the module the drupal way [2]
 
-3. Hover a user name
+3. Customize the 'Hover card' view mode for user entites at manage display [3].
+   It is recommended to use Display Suite [4] to do this because it provides
+   layouts and more fields.
 
-[1] http://drupal.org/documentation/install/modules-themes/modules-7
-[2] admin/config/people/accounts/display/hover-card
+4. Hover a user name
+
+[1] http://drupal.org/project/tipsy
+[2] http://drupal.org/documentation/install/modules-themes/modules-7
+[3] admin/config/people/accounts/display/hover_card
+[4] http://drupal.org/project/ds
