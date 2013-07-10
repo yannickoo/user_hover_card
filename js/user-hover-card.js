@@ -21,8 +21,16 @@
           }
         });
       }, function() {
-        var that = $(this);
-        that.tipsy('hide');
+        // Only hide the Tipsy if it is not hovered.
+        if (!$('.tipsy:hover').length) {
+          var that = $(this);
+          that.tipsy('hide');
+        }
+      });
+
+      // Remove Tipsy when leaved.
+      $('.tipsy').live('mouseleave', function() {
+        $(this).remove();
       });
     }
   };
