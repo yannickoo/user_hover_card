@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Main file of User Hover Card module.
+ */
+
+/**
+ * Implements hook_page_build().
+ */
+function user_hover_card_page_build(&$page) {
+  drupal_add_js(drupal_get_path('module', 'user_hover_card') . '/js/user-hover-card.js');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function user_hover_card_menu() {
+  $items = array();
+
+  $items['user/%user/card'] = array(
+    'title' => 'Hover card',
+    'page callback' => 'user_hover_card_card',
+    'page arguments' => array(1),
+    'access arguments' => array('access user profiles'),
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for user/%user/card.
+ */
+function user_hover_card_card($user) {
+  // Build render array for passed user with 'card' view mode.
+  $user_view = user_view($user, 'card');
+  $user_view = drupal_render($user_view);
+
+  return drupal_json_output($user_view);
+}

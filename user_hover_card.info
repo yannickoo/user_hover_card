@@ -1,0 +1,5 @@
+name = User Hover Cards
+description = Displays a hover card for all user profile links.
+core = 7.x
+; We only need Tipsy module because it loads the jQuery plugin on every page. You also can load it in another way.
+dependencies[] = tipsy
