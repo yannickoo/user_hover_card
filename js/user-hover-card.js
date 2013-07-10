@@ -10,7 +10,7 @@
         $.ajax({
           url: url,
           success: function(data) {
-            that.tipsy({fallback: data, html: true });
+            that.tipsy({title: function() { return data }, html: true });
           }
         });
       });
