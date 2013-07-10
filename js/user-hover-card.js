@@ -14,6 +14,7 @@
               title: function() {
                 return data;
               },
+              opacity: 1,
               html: true,
               trigger: 'manual'
             }).tipsy('show');
