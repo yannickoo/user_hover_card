@@ -1,12 +1,4 @@
-CONTENTS OF THIS FILE
----------------------
-
- * Introduction
- * Installation
-
-
-INTRODUCTION
-------------
+# Introduction
 
 Current Maintainers:
 
@@ -15,9 +7,7 @@ Current Maintainers:
 User Hover Card shows a tooltip for all user name links which shows the user
 entity with the 'Hover card' view mode.
 
-
-INSTALLATION
-------------
+# Installation
 
 1. Download the Tipsy module [1]
 
