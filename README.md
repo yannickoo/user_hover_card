@@ -2,7 +2,7 @@
 
 Current Maintainers:
 
-*  [yannickoo](http://drupal.org/user/531118)
+*  [yannickoo](https://www.drupal.org/u/yannickoo)
 
 User Hover Card shows a tooltip for all user name links which shows the user
 entity with the 'Hover card' view mode.
